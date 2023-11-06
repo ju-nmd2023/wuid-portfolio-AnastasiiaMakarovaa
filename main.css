@@ -1,0 +1,118 @@
+* {
+  background-color: rgb(242, 228, 211);
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 45px;
+}
+
+/* header */
+
+#logo {
+  font-family: "DM Serif Display", serif;
+  font-weight: 800;
+  font-size: 70px;
+  color: #2b1404;
+  border: 4px solid #e4aaa0;
+  display: inline;
+  padding: 5px;
+  background-color: rgb(249, 244, 238);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: #6a4f41;
+  font-size: larger;
+}
+
+/* main */
+
+.me {
+  width: 45%;
+}
+
+h1,
+h2 {
+  color: #2b1404;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "DM Serif Display", serif;
+}
+a,
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+}
+
+/* contact */
+
+input {
+  background-color: white;
+  width: 70%;
+  margin-left: 12%;
+  display: flex;
+  font-size: 20px;
+  padding: 14px 14px;
+  border-radius: 11px;
+  border-color: #2b1404;
+  margin-bottom: 20px;
+}
+textarea {
+  background-color: white;
+  resize: none;
+  display: flex;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  padding: 17px 17px;
+  border-radius: 11px;
+  border-color: #2b1404;
+  margin-bottom: 25px;
+  font-family: "DM Serif Display", serif;
+}
+input:focus-within {
+  outline: none;
+  border-color: #6a4f41;
+  border-width: 3px;
+}
+textarea:focus-within {
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  border-color: #6a4f41;
+  border-width: 3px;
+}
+button {
+  background-color: #e4aaa0;
+  border-radius: 18px;
+  border-color: #2b1404;
+  font-family: "";
+  color: #2b1404;
+  font-size: 22px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+/* footer */
+
+footer {
+  color: #2b1404;
+  margin-top: 4rem;
+  border-top: 3px solid #e4aaa0;
+  padding-top: 3px;
+  font-size: 25px;
+}
