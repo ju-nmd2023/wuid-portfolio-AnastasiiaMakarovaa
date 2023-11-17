@@ -4,50 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <p id="logo">Anastasiia Makarova</p>
-        <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="contacts.html">
-                    <li>Contact me</li>
-                </a>
-                <a href="#">
-                    <li>My works</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <img class="me" src="image/me.png" alt="I am personally in the street.">
-        <h1>Welcome to my page!</h1>
-        <p>Hey, I'm Anastasiia, and my life's a whirlwind of passion, creativity, and perpetual learning. For 15 years,
-            I soared through the world of aerobic gymnastics, dancing, and wakeboarding. Such a symphony of movement and
-            discipline, isn't it? But there's more to me than just athletic prowess.
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#portfolio">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Hi, I'm Anastasia!</p>
+                <h1>I'm a Graphic and UX/UI Designer </h1>
+                <h2>Design for me is turning ideas into visuals that speak louder than words. <br>Welcome to my page!
+                </h2>
+            </div>
+        </div>
 
-            Recently, I've dipped my toes into the mesmerizing universe of graphic design, and let me tell you, I'm
-            hooked! There's something magical about turning ideas into visuals, and I'm all about that creative journey
-            now.
-            So, picture this: from leaping across the gym floor to diving into the digital canvas, I'm on a mission to
-            infuse every moment with creativity. Life's a dance, and I'm choreographing my steps both on and off the
-            mat. Here, you will find information not only about my educational background, and professional experience,
-            but also, and the early projects that show my start in the world of design. Let the journey continue! 🚀
-        </p>
-    </main>
-    <footer>© Anastasiia Makarova, 2023</footer>
+        <!---------about me--------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/about.png" class="aboutme">
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About Me</h1>
+                        <p>Life's been a whirlwind of passion and perpetual learning for me. From 15 years in aerobic
+                            gymnastics to diving into graphic design, I've found my rhythm.
+                            <br>Here, you will find information not only about my educational background, and
+                            professional experience, but also, the early projects that show my start in the world of
+                            design.
+                        <div class="tab-titles">
+                            <div class="tab-links active-link">Skills</div>
+                            <div class="tab-links">Experience</div>
+                            <div class="tab-links">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UX/UI</span><br>Designing Web/App interfaces</li>
+                                <li><span>Graphic Design</span><br>Logotypes, Branding, Rebranding</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Current</span><br>Here will be my experience in Graphic Design soon</li>
+                                <li><span>2015-2022</span><br>PE Teacher and Sport Coach at different schools and clubs
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-Current</span><br>New Media Design at Jönköping University</li>
+                                <li><span>2010-2015</span><br>Physical Education and Sport at Ulyanovsk State
+                                    Pedagogical University</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------portfolio------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="works/1.png" class="work1">
+                        <div class="layer">
+                            <h3>Te Amo Tequila Bar App</h3>
+                            <p1>Unleash your taste buds with the Tea Mo Tequila Bar App—an elegant fusion of tea and
+                                tequila. Explore curated pairings and elevate your sipping experience. Cheers to the
+                                perfect blend of sophistication and fun!</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="works/2.png" class="work1">
+                        <div class="layer">
+                            <h3>Branding project "ThreadCanvas Studios"</h3>
+                            <p1>A branding project that weaves together style and sophistication. Witness the art of
+                                fashion come to life in a tapestry of creativity and design.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="works/3 (2).png" class="work1">
+                        <div class="layer">
+                            <h3>PixelCraft Pro App</h3>
+                            <p1>Your go-to UI/UX companion. Craft sleek interfaces effortlessly and bring your designs
+                                to life. Simplify your creative journey with PixelFlow—where innovation meets
+                                simplicity.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="works/4.png" class="work1">
+                        <div class="layer">
+                            <h3> PicturaMarket Web-site</h3>
+                            <p1>It's more than just a marketplace—it's a curated space where artists showcase their
+                                soulful creations, and art lovers find pieces that resonate with them.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="works/5.jpg" class="work1">
+                        <div class="layer">
+                            <nav>
+                                <ul>
+                                    <a href="project.html">
+                                        <li>Branding project "Olivia"</li>
+                                    </a>
+                                    <p1><br>Olivia is a natural and feminine project, offering carefully curated
+                                        products
+                                        that
+                                        celebrate your authentic beauty. From skincare to lifestyle essentials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------contact form----------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p2>Email: anastasiiamakarova@protonmail.com</p2>
+                        <p2><br>Phone number: +46 769128293</p2>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
