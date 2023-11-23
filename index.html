@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="main.css">
+    <script src="file.js" defer></script>
+    <script src="https://kit.fontawesome.com/22acc898cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div class="scroll-tracker"></div>
     <div id="header">
         <div class="container">
             <nav>
@@ -23,8 +29,12 @@
             </nav>
             <div class="header-text">
                 <p>Hi, I'm Anastasia!</p>
-                <h1>I'm a Graphic and UX/UI Designer </h1>
-                <h2>Design for me is turning ideas into visuals that speak louder than words. <br>Welcome to my page!
+                <div onmouseover="designer(this)" onmouseout="redesigner(this)">
+                    <h3>I'm a Graphic and UX/UI Designer </h3>
+                </div>
+                <h2>Design for me is turning ideas into visuals
+                    that speak louder than words.
+                    <br>Welcome to my page!
                 </h2>
             </div>
         </div>
@@ -136,8 +146,8 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p2>Email: anastasiiamakarova@protonmail.com</p2>
-                        <p2><br>Phone number: +46 769128293</p2>
+                        <p2><b>Email:</b> anastasiiamakarova@protonmail.com</p2>
+                        <p2><br><b>Phone number:</b> +46 769128293</p2>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -151,7 +161,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

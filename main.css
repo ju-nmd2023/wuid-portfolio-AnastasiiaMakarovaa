@@ -5,6 +5,12 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/*body*/
+
 body {
   background-color: #003435;
   color: rgb(240, 255, 254);
@@ -69,6 +75,11 @@ h1 {
   font-size: 42px;
   color: rgb(215, 187, 110);
 }
+
+h3 {
+  font-size: 42px;
+}
+
 h2 {
   font-size: 20px;
   padding-top: 20px;
@@ -126,17 +137,6 @@ h2 {
   position: relative;
 }
 
-/*.tab-links::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: rgb(215, 187, 110);
-  position: absolute;
-  left: o;
-  bottom: -6px;
-  transition: 0.5s;
-}*/
-
 .tab-links.active-link::after {
   width: 50%;
 }
@@ -179,14 +179,10 @@ p1 {
 a {
   color: rgb(215, 187, 110);
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: bold;
-}
-.workpro {
-  display: grid;
-  grid-row: 1fr 1fr;
 }
 
 /*contact*/
@@ -224,4 +220,31 @@ form textarea {
   border-radius: 6px;
 }
 
-/*small screen*/
+/*scroll tracking*/
+
+.scroll-tracker {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 0.3rem;
+  background-color: rgb(215, 187, 110);
+  transform-origin: left;
+}
+
+/* css for small screen */
+@media only screen and (max-width: 600px) {
+}
+
+/*progress button*/
+#progress {
+  background-color: rgb(215, 187, 110);
+  position: fixed;
+  font-size: 35px;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
