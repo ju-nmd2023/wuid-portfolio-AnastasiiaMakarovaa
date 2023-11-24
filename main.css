@@ -231,7 +231,13 @@ form textarea {
 }
 
 /* css for small screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+  .work-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
 }
 
 /*progress button*/
